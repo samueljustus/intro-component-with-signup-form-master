@@ -22,27 +22,37 @@
     <div class="cta">
     <button class="btn1"><strong>Try it free 7 days</strong> then $20/mo.thereafter</button>
     <div class="form-fill">
-        <form>
+        <form novalidate>
             <ul>
                 <l1>
-                    <input type="text" id="first-name" placeholder="First Name" />
+                    <input type="text" id="first-name" placeholder="First Name" required />
+                    <div class="error"></div>
                 </l1>
                 <l1>
-                    <input type="text" id="last-name" placeholder="Last Name" />
+                    <input type="text" id="last-name" placeholder="Last Name" required />
+                    <div class="error"></div>
                 </l1>
                 <l1>
-                    <input type="email" id="mail" placeholder="Email Address" />
+                    <input type="email" id="mail" placeholder="Email Address" 
+                    required minlength="8" />
+                    <div class="error"></div>
                 </l1>
                 <l1>
-                    <input type="password" id="password" placeholder="Password" />
+                    <input type="password" id="password" placeholder="Password" required />
+                    <div class="error"></div>
                 </l1>
-                <li class="btn2">
-                    <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                <li>
+                    <button class="btn2" type="submit">CLAIM YOUR FREE TRIAL</button>
                 </li>
             </ul>
+            <div class="tc">
+                <p>By clickng the button, you are agreeing to our <strong class="red">
+                    Terms and Services</strong></p>
+            </div>
         </form>
     </div>
     </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
