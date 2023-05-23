@@ -111,6 +111,16 @@ input::placeholder {
 }
 
 
+img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /* bottom: 50px;
+    left: 10em; */
+
+}
+
+
 /*major breakpoints 600px, 601px, 768px, 992px, 1200px */
 
 @media (min-width: 700px) {
