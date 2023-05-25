@@ -27,11 +27,27 @@ function checkInputs() {
     else {
         successFor(lastName);
     }
-    if (email === '') {
-        errorFor(email, 'Email Name cannot be empty');
+    if (emailValue === '') {
+        errorFor(email, 'Email cannot be empty');
     } 
-    else if (email)
+    else if (!emailValue.match(pattern)) {
+        errorFor(email, 'Looks like this is not an email')
+    } 
+    else {
+        successFor(email);
+    }
+    if (passwordValue === '') {
+        errorFor(password, 'Password cannot be empty');
+    }
+    else if (passwordValue.length < 8) {
+        errorFor(password, 'Password cannot be less than 8 characters');
+    }
+    else {
+        successFor(password);
+    }
 }
+
+const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
 
 function errorFor(input, message) {         //a function thst shows the error message for that input
@@ -44,8 +60,4 @@ function errorFor(input, message) {         //a function thst shows the error me
 function successFor(input) {               // a function that shows success message if there is any
     const parentOfInput = input.parentElement; 
     parentOfInput.classList.add('success');
-}
-
-function checkEmail() {
-    
 }

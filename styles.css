@@ -70,11 +70,13 @@ body {
     border-radius: 5px;
 }
 
+
 .container form input {
     padding: 1em;
     border-radius: 5px;
     border: 1px solid grey;
     width: 100%;
+    
 }
 
 .container form input:focus {
@@ -111,6 +113,7 @@ body {
 
 .container .form .error input {
     border: 2px solid hsl(0, 100%, 74%);
+    background: 
 }
 
 .container .form .success input {
@@ -122,6 +125,7 @@ body {
     text-align: right;
     margin-top: .8em;
     font-style: italic;
+    width: 100%;
 }
 
 .container .form .success small {
