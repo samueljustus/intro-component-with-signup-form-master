@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    /* width: 80%; */
+    max-width: 1170px;
+    padding: 1em;
+    margin: 1em;
+    /* border: 1px solid black; */
+}
+
+.hero {
+    padding-top: 2em;
+}
+
+.container h1, .container p {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.container .btn1 {
+    padding-top: .9em;
+    padding-bottom: .9em;
+    margin-top: 2em;
+    border-radius: 5px;
+    border: none;
+    background: hsl(248, 32%, 49%);
+    width: 100%;
+    transition: 0.3s;
+}
+
+.container .btn1:hover {
+    background-color:hsl(249, 49%, 36%);
+}
+
+.container form > * {
+    padding: 1em;
+}
+
+.container form p {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container form {
+    background-color:hsl(0, 0%, 100%);
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+.container form input {
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 100%;
+}
+
+.container form input:focus {
+    outline: none;
+    border: 2px solid hsl(246, 25%, 77%);
+}
+
+.container .btn2 {
+    padding: 1em;
+    width: 100%;
+    background: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color:hsl(0, 0%, 100%);
+    transition: 0.2s
+    /* boxshadow */
+}
+
+
+.container .btn2:hover {
+    background-color:hsl(154, 73%, 31%);
+}
+
+.container .terms {
+    color:#000;
+ 
+}
+
+.container span {
+    color: red;
+}
+
+
+.container .form .error input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.container .form .success input {
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+.container small {
+    color: red;
+    text-align: right;
+    margin-top: .8em;
+    font-style: italic;
+}
+
+.container .form .success small {
+    visibility: hidden;
+   
+} 
+
+@media (min-width: 740px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        margin: 4em;
+    }
+    .container .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container h1 {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .container .hero p {
+        font-size: .9rem;
+        text-align: left;
+    }
+}
+
